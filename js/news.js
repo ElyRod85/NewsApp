@@ -8,6 +8,10 @@ let totalArticlesCount = 0;
 
 
 function displayNews(articles) {
+  if (!articles || articles.length === 0) {
+    loadMoreButton.style.display = 'none';
+    return;
+  }
   totalArticlesCount += articles.length;
   articles.forEach(article => {
     const articleElement = document.createElement('div');
@@ -43,11 +47,7 @@ function displayNews(articles) {
     newsContainer.appendChild(articleElement);
   });
 
-  if (articles.length > 0) {
-    loadMoreButton.style.display = 'block';
-  } else {
-    loadMoreButton.style.display = 'none';
-  }
+  loadMoreButton.style.display = 'block';
 }
 
 
