@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+  
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+  
+p, h1, h2, h3, h4, h5 {
+    color: rgb(63, 63, 63);
+    text-align: center;
+}
+
+ul {
+    color: rgb(63, 63, 63);
+}
+
+li {
+    color: rgb(63, 63, 63);
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px auto 20px auto;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px dotted rgb(164, 164, 164);
+}
+  
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    word-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+main em {
+    font-style: italic;
+}
+
+main strong {
+    font-weight: 700;
+}
+  
+h2 {
+    font-size: 22px;
+    width: 100%;
+}
+  
+h1 {
+    font-size: 32px;
+    width: 100%;
+}
+  
+main {
+    width: 100%;
+    margin: 50px auto 30px auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+button {
+  outline: none;
+}
+
+
+
+/* Nav */
+
+#my-header {
+    margin-bottom: 51px;
+}
+
+#my-header nav {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(0,0,0,0.11);
+    width: 100%;
+    z-index: 1;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+#my-header nav .navbar-brand {
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -1px;
+    color: rgb(63, 63, 63);
+}
+
+#my-header nav .navbar-nav a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 76, 76);
+    transition: 300ms;
+}
+
+#my-header nav .navbar-nav a:hover {
+    color: rgb(99, 99, 99);
+    transition: 300ms;
+}
+
+#my-header button.navbar-toggler {
+    outline: none;
+    border: 0;
+}
+
+
+
+
+/* Load more button */
+
+main button {
+    background-color: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(72, 72, 72);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 50px auto 50px auto;
+    outline: none;
+    transition: 300ms;
+}
+
+
+main button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+
+main #load-more {
+    outline: none;
+}
+
+/* Footer */
+
+footer {
+    background: rgb(98,98,98);
+    background: -moz-radial-gradient(circle, rgb(90, 90, 90) 0%, rgba(60,60,60,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(90, 90, 90,1) 0%, rgba(60,60,60,1) 100%);
+    background: radial-gradient(circle, rgba(90, 90, 90,1) 0%, rgba(60,60,60,1) 100%);
+    padding: 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+
+footer .footer-name p {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/* News */
+
+
+main .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main #news-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 60px 10px;
+}
+  
+main .article {
+    width: 23%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    transition: 300ms;
+}
+
+main .article:hover {
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+    
+}
+
+@media(max-width: 1025px) {
+    main .article {
+        width: 30%;
+    }
+}
+
+@media(max-width: 769px) {
+    main .article {
+        width: 47%;
+    }
+}
+
+main .article p.description {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+main .article p.date {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(88, 88, 88);
+}
+
+
+main .article h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+main .article .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+
+main .article a {
+    background-color: rgb(255, 76, 76);
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 76, 76);
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 30px auto 40px auto;
+    outline: none;
+    transition: 300ms;
+}
+
+
+main .article a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 76, 76);
+    cursor: pointer;
+    outline: none;
+    transition: 300ms;
+}
+
+main .article a i {
+    padding-left: 5px;
+}
